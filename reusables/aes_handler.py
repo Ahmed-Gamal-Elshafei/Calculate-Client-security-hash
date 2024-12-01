@@ -73,19 +73,4 @@ class AESHandler:
             raise ValueError(f"Decryption failed: {e}")
 
 
-# if __name__ == "__main__":
-#     # Example usage
-#     key = b't+H<\xb4`\xb4\x1cQ\xac\x04F\xdf\x06\x99\x05H\xd0a\xd9*)\xc6 h\xcc\xcb%\xc6(\t\xb0'
-#     iv = b'C\xe4\xec\xe5&\x91\xf8\xb2\x00_\x81\xa3Y\x06TZ'
-#     aes = AESHandler(key, iv)
-#     plaintext = b"tTQ8KNc.CS9ap_Q"
-#
-#     print("Original plaintext:", plaintext.decode('utf-8'))
-#
-#     # Encryption
-#     ciphertext = aes.encrypt(plaintext)
-#     print("Encrypted ciphertext (Base64):", ciphertext)
-#
-#     # Decryption
-#     decrypted_plaintext = aes.decrypt(ciphertext)
-#     print("Decrypted plaintext:", decrypted_plaintext.decode('utf-8'))
+
